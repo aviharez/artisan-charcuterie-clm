@@ -29,7 +29,7 @@ public class BatchValuationResponse {
     private double standardWeightLossPercent;
 
     @Schema(description = "Projected weight-loss percentage applied at current elapsed time (%)")
-    private BigDecimal projectLossPercent;
+    private BigDecimal projectedLossPercent;
 
     @Schema(description = "Estimated current weight after applying projected loss (kg)")
     private BigDecimal estimatedCurrentWeightKg;
