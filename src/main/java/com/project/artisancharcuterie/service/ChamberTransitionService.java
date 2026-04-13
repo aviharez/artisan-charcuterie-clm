@@ -44,7 +44,7 @@ public class ChamberTransitionService {
         Batch batch = batchService.getBatch(batchId);
         BatchStatus currentStatus = batch.getCurrentStatus();
 
-        if (currentStatus.isTransitionable()) {
+        if (!currentStatus.isTransitionable()) {
             throw new IllegalTransitionException(currentStatus);
         }
 
